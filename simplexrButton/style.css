@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+.sxr-tuto-panel {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sxr-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sxr-qr-code {
+    visibility: hidden;
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2%;
+    position: absolute;
+    top: -160px;
+}
+
+
+.sxr-qr-code img {
+    width: 100%;
+}
+
+.sxr-qr-code-button {
+    display: flex;
+    width: 250px;
+    height: 47px;
+    left: 396.5px;
+    top: 717px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px -2px rgba(34, 37, 45, 0.48);
+    border-radius: 303px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.sxr-ar-icon {
+    margin-left: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    width: 21px;
+    height: 23px;
+    transform: rotate(180deg);
+}
+
+.sxr-qr-code-button span {
+    margin: auto 10px auto 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #0F1215;
+}
+
+.sxr-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.sxr-button:hover > .sxr-qr-code {
+    visibility: visible;
+    transition-delay: 0.2;
+    transition: opacity 1s;    
+    opacity: 1;
+}
+
+.sxr-tutorial {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.sxr-text-box {
+    position: relative;
+    width: 50%;
+    min-width: 360px;
+    background-color: white;
+    max-width: 500px;
+    height: 727px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sxr-text-box h1 {
+    
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 43px;
+    text-align: center;
+    color: #1C1C20;
+}
+
+.sxr-text-box p {
+    width: 90%;
+    height: 72px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #282D3C;
+}
+
+.sxr-text-box h2 {
+    
+    width: 90%;
+    height: 22px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #252629;
+}
+
+.sxr-text-box .srx-copy-link {
+    /* Frame 6 */
+    /* Auto Layout */
+    position: absolute;
+    width: 211px;
+    height: 47px;
+    left: 614.5px;
+    top: 722px;
+    background: #131312;
+    border-radius: 303px;
+    /* copiar link */
+    position: static;
+    left: 64px;
+    top: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    border: 0px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sxr-close-tuto {
+    /* Rectangle 95 */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 5px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+}
+
+.sxr-text-box h3 {
+    /* Cancelar */
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    text-decoration-line: underline;
+    color: #252629;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sxr-tuto-qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ECE4FF;
+    /* Rectangle 47 */
+    height: 308px;
+}
+
+.sxr-tuto-qr-code img {
+    width: 60%;
+}
+
+.sxr-tutorial-off {
+    display: none;
+}
+
+.sxr-tutorial-on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 830px) {
+    .sxr-text-box h2 {
+    
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .sxr-text-box .srx-copy-link {
+       
+        margin-top:30px;
+        
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <title>Button Simplexr</title>
+
+
+    <!-- copiar e colar -->
+    <link rel="stylesheet" href="./simplexrButton/style.css">
+    <script type="text/javascript" src="./simplexrButton/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sxr-tuto-panel">
+
+        <!-- copiar e colar -->
+        <div class="sxr-button">
+            <div class="sxr-qr-code">
+                <img src="./simplexrButton/img/qrCodeBalao.png" alt="">
+            </div>
+            <button class="sxr-qr-code-button" onclick="openTutorial(1)">
+                <img class="sxr-ar-icon" src="./simplexrButton/img/ar-icon.png" alt="">
+                <span>Experimente em seu espaço</span>
+            </button>
+        </div>
+
+    </div>
+
+
+
+    <!-- copiar e colar -->
+    <div id="tutorialSimplexr" class="sxr-tutorial sxr-tutorial-off">
+
+        <div class="sxr-text-box">
+            <button class="sxr-close-tuto" onclick="openTutorial(0)">
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.125 1.125L1.375 16.875" stroke="#282D3C" stroke-opacity="0.88" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.125 16.875L1.375 1.125" stroke="#282D3C" stroke-opacity="0.88" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+            <div class="sxr-tuto-qr-code">
+                <img src="./simplexrButton/img/qrCode.png" alt="">
+            </div>
+            <h1>Veja o produto na sua casa</h1>
+
+            <p>
+                Você pode utilizar realidade aumentada em seu celular ou tablet. Escaneie o código QR ou copie e cole o
+                link abaixo nos navegadores Chrome ou Safari do seu dispositivo móvel.
+            </p>
+            <h2>
+                <span id="textToCopy">https://simplexr.bugaboostudio.com.br/model?id=412a2960-2de0-48df-a665-1a200891cec1</span>
+            </h2>
+            <button id="copiarBtn" class="srx-copy-link">copiar link</button>
+            <h3 onclick="openTutorial(0)">Cancelar</h3>
+        </div>
+    </div>
+
+    
+
+</body>
